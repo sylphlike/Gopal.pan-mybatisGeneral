@@ -17,10 +17,6 @@ public class DateUtils {
 
 
     public static String getDateString() {
-        if(dateFormat != null) {
-            return dateFormat.format(new Date());
-        } else {
-            return new Date().toString();
-        }
+        return dateFormat.format(new Date());
     }
 }
