@@ -53,7 +53,7 @@ public class CustomizeGenerator implements CommentGenerator {
             return;
         }
         topLevelClass.addJavaDocLine("/**");
-        topLevelClass.addJavaDocLine(" * This class corresponds to the database table ["+ introspectedTable.getFullyQualifiedTable() + "]  comments [" + introspectedTable.getRemarks()+"] ");
+        topLevelClass.addJavaDocLine(" * This class corresponds to the database table ["+ introspectedTable.getFullyQualifiedTable().getIntrospectedTableName() + "]  comments [" + introspectedTable.getRemarks()+"] ");
         topLevelClass.addJavaDocLine(" * <p>   time  " + DateUtils.getDateString() +  "  (dd/MM/YYYY HH:mm)   ");
         topLevelClass.addJavaDocLine(" * <p>  email  15923508369@163.com  ");
         topLevelClass.addJavaDocLine(" * @author   Gopal.pan");
